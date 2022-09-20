@@ -34,8 +34,10 @@
             <label for="body">内容</label><br>
             <textarea name="body" class="body">{{ old('body',$task->body) }}</textarea>
         </p>
-        <input type="submit" value="更新">
-    </form>
-    <button onclick="location.href='/tasks/{{ $task->id }}'">詳細へ戻る</button>
+        <div class="botton-group">
+            <input type="submit" value="更新">
+            <button onclick="location.href='/tasks/{{ $task->id }}'">詳細へ戻る</button>
+        </div>
+        </form>
 </body>
 </html>
